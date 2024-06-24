@@ -1,0 +1,26 @@
+div{
+    width: 400px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    border: 1px solid bisque;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+}
+div:hover{
+    background-color: gray;
+    transition: 300ms;
+    transform: scale(1.5) ;
+}
+#GGMU:hover, #DCSVN:hover{
+    background-color: blue;
+}
+img{
+    max-width: 100%;
+}
+.makeshift{
+    transform: rotate(15deg);
+}

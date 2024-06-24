@@ -1,0 +1,35 @@
+body{
+    width: 825px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    line-height: 0;
+}
+h2{
+    font-weight:200;
+    line-height: 0;
+    color: gray;
+}
+h3{
+    line-height: 1;
+    border-bottom: 2px solid black;
+}
+h4{
+    line-height: 0;
+}
+h5{
+    float: right;
+    font-weight: 100;
+    color: gray;
+    text-align: right;
+    line-height: 1;
+}
+h6{
+    line-height: 0;
+    color: gray;
+    font-weight: 400;
+}
+table{
+    text-align: justify;
+    border-spacing: 20px;
+}

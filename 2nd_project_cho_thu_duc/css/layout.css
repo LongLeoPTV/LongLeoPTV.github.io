@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #565656;
+    text-align: left;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    width: 800px;
+}
+li{
+    list-style: none;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    float: none;
+}
+/* .l-sidebar{
+    width: 25%;
+    float: left;
+}
+.main-content{
+    width: 75%;
+    float: left;
+} */
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    float:left;
+}
+.header .review{
+    float: right;
+    font-size: 18px;
+}
+.nav ul{
+    float:left;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #535353;
+    border-bottom: 1px solid #535353;
+}
+.nav ul li{
+    float:left;
+    margin-right: 20px;
+    text-transform: capitalize;
+}
+.nav ul .last{
+    float:right;
+    margin-right: 0px;
+}
+h2{
+    font-weight: 200;
+    line-height: 1.5;
+}
+h4{
+    font-weight: 600;
+    line-height: 1.5;
+}
+.descriptions{
+    line-height: 2;
+    float:left;
+    width: 100%;
+}
+.ingredients{
+    float:left;
+    width: 40%;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.directions{
+    float:left;
+    width: 55%;
+    line-height: 3;
+    font-size: 14px;
+}
+.num{
+    color: aliceblue;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px;
+    font-weight: 200;
+    font-size: 14px;
+    width: 50px;
+}

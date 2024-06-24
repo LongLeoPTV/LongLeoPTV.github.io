@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+    font-family: serif;
+    text-align: center;
+    line-height: 1.5;
+}
+.section{
+    width: 100%;
+    float: left;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    float: none;
+}
+header{
+    background-image: url(/images/header.jpg);
+    background-size: 800px;
+    width: 800px;
+    height: 296px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+h1{
+    margin-top: 60px;
+    font-weight: 200;
+    font-size: 50px;
+}
+h2{
+    color: #aeaca9;
+    font-weight: 200;
+    padding-top: 40px;
+}
+.header-description{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-box{
+    border: 5px solid #f5f5f5;
+    text-align: left;
+    color: #bebebe;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.search-button{
+    float: right;
+    position: relative;
+    bottom: 16px;
+}
+.category{
+    background-color: #f4f3ef;
+    text-align: center;
+    width: 100%;
+    line-height: 2;
+}
+.subcategory{
+    width: 25%;
+    float:left;
+    background-color: #f4f3ef;
+}
+.description-in-category{
+    background-color: #77766c;
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 5px 0px 5px 0px;
+}
+.latest-recipes{
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+    line-height: 2;
+}
+.recipe{
+    width: 25%;
+    float:left;
+    background-color: #ffffff;    
+}
+.categorized-recipe{
+    font-size: 8px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+.description-in-recipe{
+    background-color: #ffffff;   
+    margin: 0px 15px 0px 15px;
+    text-align: left; 
+    color: #aeaca9;
+}
+.diet{
+    background-color: #f4f3ef;
+    text-align: center;
+    width: 100%;
+    line-height: 2;
+}
+.pickadiet{
+    background-color: #f4f3ef;
+    width: 25%;
+    float:left;
+}
+.description-in-diet{
+    background-color: #78766a;
+    margin: 0px 20px 0px 20px;
+    position: relative;
+    bottom: 120px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+    font-weight: 100;
+}
+

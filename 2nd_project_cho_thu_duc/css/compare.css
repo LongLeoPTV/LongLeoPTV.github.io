@@ -1,0 +1,21 @@
+html body #idcompare{
+    color: silver
+}
+body #idcompare{
+    color:gold
+}
+#idcompare{
+    color: aqua;
+}
+body .classcompare{
+    color: black;
+}
+.classcompare{
+    color: blue;
+}
+body h1{
+    color: brown;
+}
+h1{
+    color: blueviolet;
+}

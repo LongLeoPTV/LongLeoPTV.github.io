@@ -1,0 +1,16 @@
+body{
+    width: 705px;
+}
+div{
+    float: right;
+}
+h1{
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+h3{
+    border-bottom: 2px solid black;
+}
+p{
+    text-align: justify;
+}
