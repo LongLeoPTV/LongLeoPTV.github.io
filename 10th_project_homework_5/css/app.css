@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFFFFF;
+    font-family: serif;
+    text-align: center;
+    line-height: 1.5;
+    border: 2px solid #FFFFFF;
+}
+.section{
+    width: 100%;
+    float: left;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    float: none;
+}
+header{
+    background-image: url(/10th_project_homework_5/images/header_background.jpg);
+    background-size: auto;
+    height: 562px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo{
+    float: left;
+    padding-left: 80px;
+    padding-top: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #B3B4B8;
+    font-size: 30px;
+}
+.home{
+    float: right;
+    padding-right: 80px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #F8FFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headingscript{
+    padding-top: 220px;
+    padding-bottom: auto;
+    height: 60px;
+    width: 290px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.firstpreface{
+    background-color: #FFFFFF;
+    background-size: contain;
+    line-height: 0.5;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.secondpreface{
+    background-color: #FFFFFF;
+    background-size: contain;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main_heading{
+    text-align: left;
+    font-size: 40px;
+    width: 60%;
+    text-transform: uppercase;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading_preface{
+    color: #A8A8A8;
+    float: right;
+    text-align: left;
+    width: 57%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.breakfast{
+    float: left;
+    width: 40%;
+    text-align: right;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+.subheading{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subheading_preface{
+    color: #A8A8A8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.breakfastgraphics{
+    width: 60%;
+    float: right;
+    position: relative;
+    bottom: 200px;
+}
+.breakfastimg1{
+    max-width: 47%;
+    margin-top: 200px;
+    float:left;
+}
+.breakfastimg2{
+    max-width: 51%;
+    float: right;
+    position: relative;
+    bottom: 600px;
+    margin-top: 130px;
+}
+.yellow_empty_box{
+    color: #F5DB6D;
+    background-color: #F5DB6D;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 570px;
+    width: 350px;
+}
+ul{
+    list-style: none;
+    float: left;
+    text-align: left;
+    padding-left: 40px;
+    text-transform: uppercase;
+    color: #7C7C7C;
+    padding-top: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details{
+    width: 100%;
+    float: left;
+    position: relative;
+    bottom: 600px;
+}
+.subheading1{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details_context{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.details_preface{
+    color: #A8A8A8;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    padding-left: 10px;
+}
+.information{
+    width: 19%;
+    float: left;
+    text-align: left;
+    padding-right: 5px;
+}
+.detailimg{
+    max-width: 30%;
+}
+.info{
+    text-transform: uppercase;
+    max-width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #969696;
+}
+.extrainfo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BBBBBB;
+}
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 15px;
+}
+.menu{
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 500px;
+}
+.menu_graphics{
+    max-width: 55%;
+}
+.menuimg{
+    max-width: 90%;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    top: 1px;
+}
+.cafefoodmenu{
+    width: 40%;
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 200px;
+    padding-right: 50px;
+}
+.yellow_empty_box1{
+    color: #F5DB6D;
+    background-color: #F5DB6D;
+    text-align: center;
+    width: 440px;
+    height: 670px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 1600px;
+    left: 430px;
+}
+.tips{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding-top: 1500px;
+}
+.tipsimg{
+    max-width: 20%;
+    padding-left: 50px;
+    float: left;
+}
+.advice{
+    max-width: 20%;
+    padding-left: 50px;
+    float: left;
+    text-align: left;
+}
+.infos{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #818181;
+}
+.guides{
+    color: #C6C6C6;
+}
+footer{
+    background-image: url(/10th_project_homework_5/images/footer_background.jpg);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social_media{
+    margin-top: 460px;
+}
+.conclusion{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
