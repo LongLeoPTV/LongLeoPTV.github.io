@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #FFFFFF;
+    font-family: serif;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+.section{
+    width: 100%;
+    float: left;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1280px;
+    float: none;
+}
+header{
+    border-bottom: 3px solid #f8f8f8;
+}
+.menu{
+    background-color: #FFFFFF;
+    width: 100%;
+    line-height: 1.5;
+}
+.logo{
+    float: left;
+    color: #797B7D;
+    font-size: 15px;
+    margin: 10px 5px 10px 5px;
+    padding-left: 30px;
+}
+.subsite{
+    color: #797B7D;
+    font-size: 12px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px 5px 10px 5px;
+}
+.sign_up{
+    border: 2px solid #7CB7FF;
+    color: #7CB7FF;
+    float: right;
+    border-radius: 5px;
+    line-height: 1.5;
+    margin-top: 3px;
+    padding: 5px 5px 5px 5px;
+    font-size: 12px;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+.title{
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    font-weight: 350;
+    text-transform: capitalize;
+    margin-top: 60px;
+}
+.subtitle{
+    max-width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.price{
+    float: left;
+    font-size: 35px;
+    color: black;
+    position: relative;
+    bottom: 12px;
+    left: 70px;
+}
+.month{
+    color: #9BA1A7;
+    font-size: 23px;
+}
+.row{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col{
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.free_sign_up{
+    border: 2px solid #007BFF;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    color: #007BFF;
+}
+.pay_up{
+    border: 2px solid #007BFF;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 3px solid #f8f8f8;
+}
+.copyright{
+    float: left;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #b5b9bd;
+}
+.bi-bootstrap-fill{
+    color: #59407e;
+}
+table{
+    float: right;
+    text-align: left;
+}
+th{
+    padding: 0px 200px 0px 0px;
+}
+td{
+    color: #b5b9bd;
+}
