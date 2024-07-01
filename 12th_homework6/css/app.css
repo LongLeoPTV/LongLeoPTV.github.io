@@ -47,10 +47,11 @@ html{
     background-color: #dcd7d1;
 }
 .link{
-    width: 155px;
+    width: 140px;
     background-color: #03482c;
     border-radius: 25px;
     margin-top: 30px;
+    padding: 10px;
 }
 .text{
     float: left;
@@ -63,10 +64,12 @@ html{
 }
 .start{
     background-color: #FFFFFF;
-    margin: 7px;
+    margin-left: 5px;
     border-radius: 25px;
     color: #03482c;
     font-size: 15px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 h2{
     color: #03482c;
@@ -129,10 +132,11 @@ h2{
 }
 .process{
     background-color: #FFFFFF;
-    margin: 7px 7px 7px 32px;
+    margin-left: 15px;
     border-radius: 25px;
     color: #03482c;
     font-size: 15px; 
+    padding: 3px 5px 3px 5px;
 }
 .box{
     background-color: #dcd7d1;
