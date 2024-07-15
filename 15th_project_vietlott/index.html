@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vietlott</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var vietlott = []; // array chứa số hệ thống tạo
+      // tạo 6 số ngẫu nhiên
+      for (var i = 0; i < 6; i++) {
+        var xosovietlott = Math.floor(Math.random() * 56);
+        vietlott.push(xosovietlott);
+      }
+      console.log(vietlott);
+      var sotrongve = []; // array số trong vé người chơi đã mua
+      // nhập số trên vé vào hệ thống và kiểm tra
+      for (var x = 1; x <= 6; x++) {
+        var songuoichoichon = prompt(
+          `Hãy nhập số thứ ${x} trong dãy số bạn đã chọn vào đây để kiểm tra kết quả: `
+        );
+        songuoichoichon = parseInt(songuoichoichon);
+        if (
+          songuoichoichon < 0 ||
+          songuoichoichon > 55 ||
+          sotrongve.includes(songuoichoichon)
+        ) {
+          alert("Số không hợp lệ hoặc đã được chọn trước đó.");
+        } else {
+          sotrongve.push(songuoichoichon);
+        }
+      }
+      console.log(sotrongve);
+      //dò những số người chơi chọn mà trùng khớp với kết quả
+      if (sotrongve.length !== 6) {
+        alert("Vui lòng chọn đủ 6 số.");
+      }
+      var sotrungthuong = 0;
+      for (let l = 0; l < sotrongve.length; l++) {
+        sotrongve = sotrongve[l];
+        if (vietlott.includes(sotrongve)) {
+          sotrungthuong++;
+        }
+      }
+      console.log(sotrungthuong);
+      //trả về kết quả giải thưởng
+      var giaithuong = "";
+      if (sotrungthuong.length === 3) {
+        giaithuong = "100 cành";
+      } else if (sotrungthuong.length === 4) {
+        giaithuong = "1 củ";
+      } else if (sotrungthuong.length === 5) {
+        giaithuong = "10 củ";
+      } else if (sotrungthuong.length === 6) {
+        giaithuong = "Jackpot 10 tỷ";
+      } else {
+        giaithuong = "Tích cực quay tay vận may sẽ tới!";
+      }
+      alert(`Giải thưởng của bạn là: ${giaithuong}`);
+    </script>
+  </body>
+</html>
