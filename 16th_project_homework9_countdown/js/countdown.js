@@ -1,5 +1,5 @@
 var min = 9;
-var sec = 60;
+var sec = 59;
 
 var cdmin = setInterval(minutes, 60000);
 
