@@ -1,0 +1,18 @@
+#fan{
+    margin: 350px;
+    width: 450px;
+    height: 450px;
+    background-image: url(/17th_homework10_onlyfans/img/fan.png);
+    background-size: 450px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+  }
+
+button:active {
+    background-color: #3f3f3f;
+  }

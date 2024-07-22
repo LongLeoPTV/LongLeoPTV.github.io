@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/17th_homework10_onlyfans/css/app.css" />
+    <title>Fan</title>
+  </head>
+  <body>
+    <h1 id="fan"></h1>
+    <button type="button" onclick="Offfan()">OFF</button>
+    <button type="button" onclick="OnFan(1)">1</button>
+    <button type="button" onclick="OnFan(2)">2</button>
+    <button type="button" onclick="OnFan(3)">3</button>
+    <script type="text/javascript">
+    var level = 0; // đặt bién
+    var spin = document.getElementById("fan"); // biến phần tử html sang var js
+    var rotation = 0; // đặt bién
+    var rotationSpeed = 0; // đặt biến
+
+    function Offfan() { // Tắt quạt, các var về chuyển động về 0
+      level = 0;
+      rotationSpeed = 0;
+    }
+
+    function OnFan(speedLevel) { // set tốc độ
+      level = speedLevel; // chọn mức mong muốn từ object ở dưới
+      rotationSpeed = getRotationSpeed(speedLevel); //cài tốc độ quay ở level bạn muốn
+    }
+
+    function getRotationSpeed(speedLevel) { // hàm để lấy tốc độ
+      var rotationSpeeds = { // object để lấy thông tin tốc độ
+        0: 0,
+        1: 10,
+        2: 20,
+        3: 30,
+      };
+      return rotationSpeeds[speedLevel]; // trả về giá trị tốc độ
+    }
+
+    setInterval(function() {
+      rotation += rotationSpeed; // đưa rotation speed vào hàm
+      spin.style.transform = 'rotate(' + rotation + 'deg)'; // cài đặt style
+    }, 30); // interval lặp lại mỗi 30ms
+    </script>
+  </body>
+</html>
