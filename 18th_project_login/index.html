@@ -25,37 +25,68 @@
       </button>
     </header>
     <main>
-      <div class="card" id="loginCard">
+      <div class="card" id="loginCard" style="display: none">
         <h5 class="card-header">Login</h5>
         <div class="card-body">
           <h5 class="card-title">Please fill in all necessary information</h5>
-          <p class="card-text"></p>
-          <form action="#" method="get">
-            <label>Username:</label>
-            <input type="text" name="Username" />
-          </form>
-          <form action="#" method="get">
-            <label>Password:</label>
-            <input type="password" name="Password" />
-          </form>
+          <div class="card-text">
+            <form action="#" method="get" id="loginForm">
+              <label>Username:</label>
+              <input type="email" name="Username" id="usernameInput" />
+              <p id="usernameError" class="error text-danger"></p>
+              <label>Password:</label>
+              <input type="password" name="Password" id="passwordInput" />
+              <p id="passwordError" class="error text-danger"></p>
+            </form>
+          </div>
+          <button class="btn btn-primary" onclick="validateForm()">
+            Login
+          </button>
+          <a href="#" class="btn btn-info">Register</a>
         </div>
-        <a href="#" class="btn btn-primary">Login</a>
-        <a href="#" class="btn btn-info">Register</a>
       </div>
     </main>
     <script type="text/javascript">
       var cardVisible = false;
       var card = document.getElementById("loginCard");
+      var overlay = document.getElementById("overlay");
 
       function ToLogin() {
-        if (cardVisible) {
-          card.style.display = "none";
-          overlay.style.display = "none";
-          cardVisible = false;
-        } else {
+        if (!cardVisible) {
           card.style.display = "block";
           overlay.style.display = "block";
           cardVisible = true;
+        } else {
+          card.style.display = "none";
+          overlay.style.display = "none";
+          cardVisible = false;
+        }
+      }
+
+      function validateForm() {
+        var username = document.getElementById("usernameInput").value;
+        var password = document.getElementById("passwordInput").value;
+        var usernameError = document.getElementById("usernameError");
+        var passwordError = document.getElementById("passwordError");
+
+        // Validate username (email format)
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(username)) {
+          usernameError.innerText = "Please enter a valid email address";
+          usernameError.style.color = "red";
+        } else {
+          usernameError.innerText = "Username is valid";
+          usernameError.style.color = "green";
+        }
+
+        // Validate password (at least 6 characters long)
+        if (password.length < 6) {
+          passwordError.innerText =
+            "Password must be at least 6 characters long";
+          passwordError.style.color = "red";
+        } else {
+          passwordError.innerText = "Password is valid";
+          passwordError.style.color = "green";
         }
       }
     </script>
