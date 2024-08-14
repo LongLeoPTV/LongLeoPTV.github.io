@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/app.css"/>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-left">
+        <div class="icon"><i class="bi bi-list"></i></div>
+        <h1>Photos</h1>
+      </div>
+      <div class="header-right">
+        <div class="icon" id="search-icon"><i class="bi bi-search"></i></div>
+        <div class="icon"><i class="bi bi-three-dots-vertical"></i></div>
+      </div>
+    </div>
+    <div class="search-box" id="search-box">
+      <input type="text" id="search-input" placeholder="Search..." />
+    </div>
+    <div class="container">
+      <div class="sidebar" id="sidebar">
+        
+      </div>
+      <div class="main-content" id="main-content">
+        
+      </div>
+    </div>
+
+    <script>
+      // Define biến
+      const fruitData = [
+        {
+          name: "Kiwis",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+        {
+          name: "Lemons",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+        {
+          name: "Strawberries",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+        {
+          name: "Figs",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+        {
+          name: "Nectarines",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+        {
+          name: "Watermelons",
+          subtitle: "Collection of high resolution fruit photoshoot",
+          date: "August 12",
+        },
+      ];
+
+      const sidebar = document.getElementById("sidebar");
+      const mainContent = document.getElementById("main-content");
+      const searchIcon = document.getElementById("search-icon");
+      const searchBox = document.getElementById("search-box");
+      const searchInput = document.getElementById("search-input");
+
+      // lưu data vào local storage
+      function saveToLocalStorage() {
+        localStorage.setItem("fruitGalleryData", JSON.stringify(fruitData));
+      }
+
+      // lấy data từ local storage
+      function loadFromLocalStorage() {
+        const storedData = localStorage.getItem("fruitGalleryData");
+        return storedData ? JSON.parse(storedData) : null;
+      }
+
+      // Hiển thị sidebar
+      function populateSidebar(data) {
+        sidebar.innerHTML = ""; // Xóa
+
+        data.forEach((fruit) => {
+          const item = document.createElement("div");
+          item.className = "sidebar-item";
+          item.innerHTML = `
+            <img src="https://longleoptv.github.io/23th_module2_test/img/${fruit.name}.jpg" alt="${fruit.name}">
+            <div class="sidebar-item-text">
+                <div class="sidebar-item-title">${fruit.name}</div>
+                <div class="sidebar-item-subtitle">${fruit.subtitle}</div>
+            </div>
+            <div class="sidebar-item-date">${fruit.date}</div>
+        `;
+          item.addEventListener("click", () => showGallery(fruit.name));
+          sidebar.appendChild(item);
+        });
+      }
+
+      function showGallery(fruit) {
+        mainContent.innerHTML = `
+        <div class="main-header">
+            <div class="main-title">${fruit}</div>
+        </div>
+        <div class="gallery">
+            <img src="https://longleoptv.github.io/23th_module2_test/img/${fruit}%201.jpg" alt="${fruit} 1">
+            <img src="https://longleoptv.github.io/23th_module2_test/img/${fruit}%202.jpg" alt="${fruit} 2">
+            <img src="https://longleoptv.github.io/23th_module2_test/img/${fruit}%203.jpg" alt="${fruit} 3">
+            <img src="https://longleoptv.github.io/23th_module2_test/img/${fruit}%204.jpg" alt="${fruit} 4">
+        </div>
+    `;
+      }
+      // Load trang
+      function initializePage() {
+        let data = loadFromLocalStorage();
+        if (!data) {
+          data = fruitData;
+          saveToLocalStorage();
+        }
+        populateSidebar(data);
+        showGallery(data[0].name); // default kiwi xuất hiện đầu tiên
+      }
+      // Initialize the page when the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", initializePage);
+    </script>
+  </body>
+</html>
