@@ -1,0 +1,26 @@
+.icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footing {
+    background-color: #222;
+    padding-bottom: 50px;
+}
+.icon i {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.NavFooter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.Redirect {
+    margin: 0 10px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
